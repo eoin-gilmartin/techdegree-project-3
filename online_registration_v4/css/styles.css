@@ -88,6 +88,8 @@ fieldset {
 }
 
 input[type="text"],
+input[type="tel"],
+input[type="email"],
 select {
     background-color: #ebf0ed;
     border-radius: 5px;
