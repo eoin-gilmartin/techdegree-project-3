@@ -95,9 +95,20 @@ select {
     border-radius: 5px;
     display: block;
     margin-top: 10px;
-    width: 100%;
+    width: 90%;
     height: 40px;
     border-style: hidden;
+    transition: width 1s;
+}
+
+input:focus[type="text"],
+input:focus[type="tel"],
+input:focus[type="email"],
+textarea:focus,
+select:focus {
+    outline-color: darkslategray;
+    outline-width: medium;
+    width: 100%;
 }
 
 input[name="zip"] {
@@ -107,12 +118,6 @@ input[name="zip"] {
 .contact-info {
     padding-bottom: 30px;
     border-bottom: 2px solid darkslategray;
-}
-
-input:focus,
-select:focus {
-    outline-color: darkslategray;
-    outline-width: medium;
 }
 
 input[placeholder="Required"] {
@@ -173,9 +178,10 @@ label[for="newsletters"] {
 textarea {
     background-color: #ebf0ed;
     border-radius: 5px;
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     border-style: groove;
+    transition: width 1s;
 }
 
 .btn {
@@ -228,6 +234,11 @@ footer {
 
     .contact-info input,
     .contact-info select {
+        width: 50%;
+    }
+    
+    .contact-info input:focus,
+    .contact-info select:focus {
         width: 60%;
     }
 
